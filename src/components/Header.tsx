@@ -40,9 +40,11 @@ const Header = () => {
                 {
                   navigation.map((item)=>(
                       
-                      <li key={item.title} 
+                    <Link key={item.title} href={item.href}>
+                        <li  
                      
-                      className='font-semibold  text-transparent bg-clip-text bg-gradient-to-r from-black to to-mainColor  hover:text-black duration-200  '>{item.title}</li>
+                     className='font-semibold  text-transparent bg-clip-text bg-gradient-to-r from-black to to-mainColor  hover:text-black duration-200  '>{item.title}</li>
+                    </Link>
                       
                   ))
                 }

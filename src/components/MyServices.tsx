@@ -5,7 +5,7 @@ import { serviceDetails } from '@/constants/data'
 
 const MyServices = () => {
   return (
-   <section>
+   <section id='myservices'>
     <Container className=''>
         <Title title='My Services'></Title>
         <hr className='hrStyle'></hr>

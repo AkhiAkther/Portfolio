@@ -9,7 +9,7 @@ import { typing } from '@/constants/data'
 const Banner = () => {
   return (
     <section>
-        <div className="flex  justify-around text-zinc-100  ">
+        <div className="flex   justify-around text-zinc-100  ">
             <div className=' bg-zinc-900 w-[70%] h-screen flex flex-col items-start  '>
                <div className='w-1/2 ml-10 md:ml-[100px] flex flex-col  gap-4 md:mt-28 '>
                <p>Hello!</p>
@@ -38,10 +38,10 @@ const Banner = () => {
                 </Link>
                </div>
             </div>
-            <div className='  bg-gradient-to-b from-zinc-800 to-mainColor w-[30%] h-screen'>
+            <div className='bg-gradient-to-b  from-zinc-800 to-mainColor w-[30%] h-screen'>
                 
-                <div className='w-[15rem] bg-gradient-to-r from-zinc-900 to-zinc-900 aspect-square md:w-[35rem]  absolute rounded-full top-[60%] left-[70%] translate-x-[-50%] translate-y-[-50%] '></div>
-                <div className= 'w-[10rem] bg-white aspect-square md:w-[28rem]  absolute rounded-full top-[60%] left-[70%] translate-x-[-50%] translate-y-[-50%] shadow-3xl shadow-white '>
+                <div className='w-[10rem] bg-gradient-to-r from-zinc-900 to-zinc-900 aspect-square md:w-[35rem]  absolute rounded-full top-[60%] left-[70%] translate-x-[-50%] translate-y-[-50%] '></div>
+                <div className= 'w-[8rem] bg-white aspect-square md:w-[28rem]  absolute rounded-full top-[60%] left-[70%] translate-x-[-50%] translate-y-[-50%] shadow-3xl shadow-white '>
                                <Image src={bannerImg} alt={"banner Image"}
                 className=' rounded-full w-full object-full'/>
                                                 

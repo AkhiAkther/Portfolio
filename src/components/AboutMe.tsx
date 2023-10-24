@@ -4,7 +4,7 @@ import Title from './Title'
 
 const AboutMe = () => {
   return (
-   <section>
+   <section id='aboutme'>
      <Container className=' '>
        <Title title='About Me'></Title>
        <hr className='hrStyle'></hr>

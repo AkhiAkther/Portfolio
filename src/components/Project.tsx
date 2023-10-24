@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const Project = () => {
   return (
-   <section>
+   <section id='myproject'>
     <Container>
         <Title title='My Project'></Title>
         <hr className='hrStyle'></hr>
