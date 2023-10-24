@@ -41,7 +41,7 @@ const Banner = () => {
             <div className='bg-gradient-to-b  from-zinc-800 to-mainColor w-[30%] h-screen'>
                 
                 <div className='w-[10rem] bg-gradient-to-r from-zinc-900 to-zinc-900 aspect-square md:w-[35rem]  absolute rounded-full top-[60%] left-[70%] translate-x-[-50%] translate-y-[-50%] '></div>
-                <div className= 'w-[8rem] bg-white aspect-square md:w-[28rem]  absolute rounded-full top-[60%] left-[70%] translate-x-[-50%] translate-y-[-50%] shadow-3xl shadow-white '>
+                <div className= 'w-[8rem] bg-white aspect-square md:w-[28rem]  absolute rounded-full top-[60%] left-[70%] translate-x-[-50%] translate-y-[-50%] shadow md:shadow-3xl shadow-white '>
                                <Image src={bannerImg} alt={"banner Image"}
                 className=' rounded-full w-full object-full'/>
                                                 
