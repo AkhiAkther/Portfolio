@@ -27,7 +27,7 @@ const Contactpage = () => {
         <div className='flex  gap-2 py-5'>
             {
               social.map((item)=>(
-                <p className='text-mainColor w-8 h-8 bg-zinc-100 rounded-full flex items-center justify-center hover:bg-mainColor hover:text-zinc-100'>{<item.icon/>}</p>
+                <p key={item.title} className='text-mainColor w-8 h-8 bg-zinc-100 rounded-full flex items-center justify-center hover:bg-mainColor hover:text-zinc-100'>{<item.icon/>}</p>
               ))  
             }
         </div>
