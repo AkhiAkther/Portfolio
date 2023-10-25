@@ -12,7 +12,7 @@ const config: Config = {
       mainColor:"#108fa6"
      },
      boxShadow: {
-      '3xl': '0 0 2rem #fff,inset 0 0 1rem #fff, 0 0 2rem #108fa6'
+      '3xl': '0 0 1rem #fff, 0 0 3rem #108fa6 '
       ,
       
       

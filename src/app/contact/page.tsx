@@ -36,13 +36,13 @@ const Contactpage = () => {
        
       
        
-        <div className='w-full flex flex-col  justify-center gap-3   auto p-10 border border-zinc-600'>
+        <div className='w-9/12 flex flex-col  justify-center gap-3  auto p-10 border border-zinc-600'>
     
   
     <p className=''>Name  </p>
-    <input type='text' placeholder='Enter your Name' className='p-3'/>
+    <input type='text' placeholder='Enter your Name' className='p-3 text-black'/>
     <p>Email</p>
-      <input type='email' placeholder='Enter your email' className='p-3'/>
+      <input type='email' placeholder='Enter your email' className='p-3 text-black'/>
     
       <p>massage</p>
       <textarea className=' w-46 h-36 text-black'></textarea>

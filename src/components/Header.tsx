@@ -7,10 +7,12 @@ import logo from "@/assest/logo.png"
 import { Menu ,X} from 'lucide-react'
 import { useState } from 'react'
 import {motion} from 'framer-motion'
+import { usePathname, useRouter } from 'next/navigation'
 
 const Header = () => {
     const [show, setShow]=useState(false)
-    
+    const pathname=usePathname()
+    const router=useRouter()
   return (
    <div className='w-full bg-zinc-900 h-20  text-white sticky top-0 z-50'>
     <div className='max-w-screen-xl mx-auto h-full flex items-center justify-between relative'>
@@ -21,7 +23,7 @@ const Header = () => {
           {
             navigation.map((item)=>(
                 <Link key={item.title} href={item.href} target={item.target}>
-                <li className='font-semibold text-transparent bg-clip-text  bg-gradient-to-r from-white to to-mainColor  hover:text-mainColor duration-200 '>{item.title}</li>
+                <li className={`font-semibold text-transparent bg-clip-text  bg-gradient-to-r from-white to to-mainColor duration-200 ${pathname === item.href && "text-white"}`}>{item.title}</li>
                 </Link>
             ))
           }
@@ -42,7 +44,7 @@ const Header = () => {
                       
                     <Link key={item.title} href={item.href}>
                         <li  
-                     
+                      onClick={()=>{router.push(item.href),setShow((false))}}
                      className='font-semibold  text-transparent bg-clip-text bg-gradient-to-r from-black to to-mainColor  hover:text-black duration-200  '>{item.title}</li>
                     </Link>
                       
